@@ -1,0 +1,11 @@
+LAB #1  - CROS vulnerability with basic origin reflection
+
+Target Goal - exploit the CROS misconfigureation to retrieve 
+the administrator's API key
+
+Creds - wiener:peter
+
+Analysis:
+
+Testing for CROS minsconfiguratoins:
+1. change the origin to an arbitrary value / True
