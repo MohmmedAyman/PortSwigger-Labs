@@ -1,0 +1,14 @@
+LAB #3  - CROS vulnerability with basic origin reflection
+
+Target Goal - exploit the CROS misconfigureation to retrieve 
+the administrator's API key
+
+Creds - wiener:peter
+
+Analysis:
+
+Testing for CROS minsconfiguratoins:
+1. change the origin header to an arbitrary value / false
+2. change the origin header to an null value / false
+3. change the origin header to one that begins with the origin of the site value / false
+4. change the origin header to one that ends with the origin of the site value / True
