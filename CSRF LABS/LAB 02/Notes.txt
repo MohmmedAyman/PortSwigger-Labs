@@ -1,0 +1,11 @@
+LAB #2 - CSRF where token validation depends on request method 
+
+Target Goal - exploit the site wiht CSRF vulnerability to change the viewr's email address and upload it to your exploit server
+
+Creds - wiener-peter
+
+Analysis:
+
+Testing for CSRF vulnerability:
+1. try to remove session (not successd)
+2. try to change the request method from post to get (successd) 

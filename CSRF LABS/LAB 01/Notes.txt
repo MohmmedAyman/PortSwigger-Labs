@@ -1,0 +1,10 @@
+LAB #1 - CSRF vulnerability with no defenses
+
+Target Goal - exploit the site wiht CSRF vulnerability to change the viewr's email address and upload it to your exploit server
+
+Creds - wiener-peter
+
+Analysis:
+
+Testing for CSRF vulnerability:
+1. change the Referer header 

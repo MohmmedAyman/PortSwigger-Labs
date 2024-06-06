@@ -1,0 +1,12 @@
+LAB #4 - CSRF where token is not tied to user session
+
+Target Goal - exploit the site wiht CSRF vulnerability to change the viewr's email address and upload it to your exploit server
+
+Creds - wiener-peter, carlos:montoya
+
+Analysis:
+
+Testing for CSRF vulnerability:
+1. try to remove session (not successd)
+2. try to change the request method from post to get (not successd) 
+3. see if the csrf token not tied to user session (successd)
