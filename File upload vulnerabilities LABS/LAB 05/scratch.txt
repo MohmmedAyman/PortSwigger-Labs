@@ -1,0 +1,13 @@
+LAB #5  - Web shell upload via obfuscated file extension
+
+Target Goal - upload a basic PHP web shell  to exfiltrate the contents of the file /home/carlos/secret
+
+Creds - wiener:peter
+
+Analysis:
+
+Testing for File Upload Vulnerabilities :
+1. test to upload file .php /false
+2. test to modify in Content-type value it "image/png" /false
+3. test to upload file .htaccess /false
+4. modify filename in burpsuite "lab-05.php%00.jpg" /true

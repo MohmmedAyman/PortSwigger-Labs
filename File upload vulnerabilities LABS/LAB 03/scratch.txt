@@ -1,0 +1,12 @@
+LAB #3  - Web shell upload via path traversal
+
+Target Goal - upload a basic PHP web shell  to exfiltrate the contents of the file /home/carlos/secret
+
+Creds - wiener:peter
+
+Analysis:
+
+Testing for File Upload Vulnerabilities :
+1. test to upload file .php /false
+2. test to modify in Content-type value it "image/png" /true but not work in this path
+3. test to change the directory in filename value it "..%2fexploit.php" /true and it work

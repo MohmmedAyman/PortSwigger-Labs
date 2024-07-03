@@ -1,0 +1,11 @@
+LAB #2  - Web shell upload via Content-Type restriction bypass
+
+Target Goal - upload a basic PHP web shell  to exfiltrate the contents of the file /home/carlos/secret
+
+Creds - wiener:peter
+
+Analysis:
+
+Testing for File Upload Vulnerabilities :
+1. test to upload file .php /false
+2. test to modify in Content-type value it "image/png" /true
